@@ -502,7 +502,7 @@ export default function Quiz() {
                     {quizQuestions[currentQuestion].question}
                   </h3>
 
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-6xl mx-auto">
                     {quizQuestions[currentQuestion].options.map((option) => {
                       const IconComponent = option.icon;
                       return (
@@ -511,14 +511,14 @@ export default function Quiz() {
                           onClick={() => handleAnswer(option)}
                           className="group relative aspect-square p-0 rounded-2xl overflow-hidden border-0 text-gold-300 bg-gradient-to-br from-gold-700/30 via-gold-500/10 to-transparent hover:from-gold-700/50 hover:via-gold-500/20 transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_10px_30px_rgba(253,216,53,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500/40 focus-visible:ring-offset-2 focus-visible:ring-offset-black-900 w-full h-auto"
                           style={{
-                            minHeight: "calc(min(50vw, 260px))",
-                            maxHeight: "360px",
+                            minHeight: "calc(min(70vw, 340px))",
+                            maxHeight: "420px",
                           }}
                         >
                           <div className="absolute inset-px rounded-2xl bg-black-900/60 border border-gold-500/30" />
                           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_30%_20%,rgba(253,216,53,0.08),transparent_60%)]" />
                           <div className="relative z-10 h-full w-full p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center text-center">
-                            <IconComponent className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 text-gold-600 flex-shrink-0 drop-shadow-[0_0_12px_rgba(253,216,53,0.2)]" />
+                            <IconComponent strokeWidth={1.75} className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 text-gold-600 flex-shrink-0 drop-shadow-[0_0_12px_rgba(253,216,53,0.2)]" />
                             <div className="space-y-1 mt-2 sm:mt-3 flex-1 flex flex-col justify-center w-full text-center">
                               <div className="font-semibold text-xs sm:text-sm leading-tight whitespace-normal break-words">
                                 {option.text}
