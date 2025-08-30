@@ -502,7 +502,7 @@ export default function Quiz() {
                     {quizQuestions[currentQuestion].question}
                   </h3>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5 lg:gap-4 max-w-7xl mx-auto">
                     {quizQuestions[currentQuestion].options.map((option) => {
                       const IconComponent = option.icon;
                       return (
@@ -515,7 +515,7 @@ export default function Quiz() {
                         >
                           <div className="flex flex-col h-full">
                             <div className="flex items-center justify-center p-3 sm:p-4 flex-1">
-                              <IconComponent strokeWidth={2} className="text-gold-500 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
+                              <IconComponent strokeWidth={2} className="text-gold-500 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16" />
                             </div>
                             <div className="flex flex-col items-center justify-center text-center px-3 sm:px-4 py-2 gap-1">
                               <div className="font-semibold text-xs sm:text-sm leading-tight break-words">
