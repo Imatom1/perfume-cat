@@ -506,28 +506,26 @@ export default function Quiz() {
                     {quizQuestions[currentQuestion].options.map((option) => {
                       const IconComponent = option.icon;
                       return (
-                        <Button
+                        <button
                           key={option.id}
+                          type="button"
                           onClick={() => handleAnswer(option)}
-                          className="group relative p-0 rounded-2xl overflow-hidden border-0 text-gold-300 bg-gradient-to-br from-gold-700/30 via-gold-500/10 to-transparent hover:from-gold-700/50 hover:via-gold-500/20 transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_10px_30px_rgba(253,216,53,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500/40 focus-visible:ring-offset-2 focus-visible:ring-offset-black-900 w-full h-72 md:h-80"
+                          className="group relative block w-full h-64 sm:h-72 md:h-80 rounded-2xl border border-gold-400/60 bg-black-900/70 hover:bg-black-800 transition-all duration-200 hover:shadow-[0_0_0_2px_rgba(253,216,53,0.4)] focus:outline-none focus:ring-2 focus:ring-gold-500/40"
                         >
-                          <div className="absolute inset-px rounded-2xl bg-black-900/60 border border-gold-500/30" />
-                          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_30%_20%,rgba(253,216,53,0.08),transparent_60%)]" />
-                          <div className="relative z-10 h-full w-full flex flex-col md:flex-row">
-                            <div className="flex-1 flex items-center justify-center relative p-5 md:p-6">
-                              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(253,216,53,0.12),transparent_60%)]" />
-                              <IconComponent size={220} strokeWidth={2.25} className="relative text-gold-600 drop-shadow-[0_0_16px_rgba(253,216,53,0.25)]" />
+                          <div className="grid grid-cols-2 h-full">
+                            <div className="flex items-center justify-center border-r border-black-700 p-4 sm:p-5">
+                              <IconComponent strokeWidth={2} className="text-gold-500 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" />
                             </div>
-                            <div className="flex-1 flex flex-col items-center justify-center text-center px-5 md:px-6 py-4 gap-2">
-                              <div className="font-semibold text-xs sm:text-sm leading-tight whitespace-normal break-words">
+                            <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 gap-2">
+                              <div className="font-semibold text-xs sm:text-sm leading-tight break-words">
                                 {option.text}
                               </div>
-                              <div className="text-[10px] sm:text-xs text-gold-300 leading-relaxed whitespace-normal break-words px-1">
+                              <div className="text-[10px] sm:text-xs text-gold-300 leading-relaxed break-words px-1">
                                 {option.traits.slice(0, 3).join(", ")}
                               </div>
                             </div>
                           </div>
-                        </Button>
+                        </button>
                       );
                     })}
                   </div>
