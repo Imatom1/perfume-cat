@@ -511,13 +511,13 @@ export default function Quiz() {
                           type="button"
                           onClick={() => handleAnswer(option)}
                           className="group relative block w-full rounded-2xl border border-gold-400/60 bg-black-900/70 hover:bg-black-800 transition-all duration-200 hover:shadow-[0_0_0_2px_rgba(253,216,53,0.4)] focus:outline-none focus:ring-2 focus:ring-gold-500/40"
-                          style={{ height: "clamp(14rem, 28vw, 22rem)" }}
+                          style={{ height: "clamp(9rem, 18vw, 12rem)" }}
                         >
-                          <div className="grid grid-cols-2 h-full">
-                            <div className="flex items-center justify-center border-r border-black-700 p-4 sm:p-5">
-                              <IconComponent strokeWidth={2} className="text-gold-500" style={{ width: "clamp(7rem, 12vw, 14rem)", height: "clamp(7rem, 12vw, 14rem)" }} />
+                          <div className="flex flex-col h-full">
+                            <div className="flex items-center justify-center p-3 sm:p-4 flex-1">
+                              <IconComponent strokeWidth={2} className="text-gold-500 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
                             </div>
-                            <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 gap-2">
+                            <div className="flex flex-col items-center justify-center text-center px-3 sm:px-4 py-2 gap-1">
                               <div className="font-semibold text-xs sm:text-sm leading-tight break-words">
                                 {option.text}
                               </div>
