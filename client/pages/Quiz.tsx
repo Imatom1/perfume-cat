@@ -518,10 +518,10 @@ export default function Quiz() {
                           <div className="absolute inset-px rounded-2xl bg-black-900/60 border border-gold-500/30" />
                           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_30%_20%,rgba(253,216,53,0.08),transparent_60%)]" />
                           <div className="relative z-10 h-full w-full p-4 sm:p-5 md:p-6 flex flex-col text-center">
-                            <div className="flex items-center justify-center h-1/2">
-                              <IconComponent strokeWidth={2} className="h-[80%] w-[80%] text-gold-600 flex-shrink-0 drop-shadow-[0_0_12px_rgba(253,216,53,0.2)]" />
+                            <div className="flex items-center justify-center flex-[0_0_50%]">
+                              <IconComponent strokeWidth={2} className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 text-gold-600 flex-shrink-0 drop-shadow-[0_0_12px_rgba(253,216,53,0.2)]" />
                             </div>
-                            <div className="h-1/2 flex flex-col justify-center w-full text-center space-y-1 mt-2 sm:mt-3">
+                            <div className="flex-[0_0_50%] flex flex-col justify-center w-full text-center space-y-1 mt-2 sm:mt-3">
                               <div className="font-semibold text-xs sm:text-sm leading-tight whitespace-normal break-words">
                                 {option.text}
                               </div>
