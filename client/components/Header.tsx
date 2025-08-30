@@ -53,7 +53,7 @@ export function Header() {
                       : "text-gold-300 hover:bg-gold-600 hover:text-black-950"
                   }`}
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className="w-6 h-6" />
                   {item.name}
                 </Link>
               );
@@ -96,7 +96,7 @@ export function Header() {
                         : "text-gold-300 hover:bg-gold-600 hover:text-black-950"
                     }`}
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className="w-6 h-6" />
                     {item.name}
                   </Link>
                 );

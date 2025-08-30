@@ -559,7 +559,7 @@ export default function Quiz() {
                         <CardContent className="p-3 sm:p-4 md:p-5">
                           <div className="space-y-2 sm:space-y-3">
                             <div className="flex items-center justify-between">
-                              <Badge className="bg-gold-600 text-white text-xs font-semibold">
+                              <Badge className="bg-gold-500 text-black-950 text-xs font-semibold">
                                 #{index + 1} Match
                               </Badge>
                               <Crown className="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" />
