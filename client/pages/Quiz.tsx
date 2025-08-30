@@ -517,12 +517,12 @@ export default function Quiz() {
                           }}
                         >
                           <div className="flex flex-col items-center justify-center space-y-2 sm:space-y-3 h-full w-full">
-                            <IconComponent className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-gold-600 flex-shrink-0" />
+                            <IconComponent className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 text-gold-600 flex-shrink-0" />
                             <div className="space-y-1 flex-1 flex flex-col justify-center w-full text-center">
-                              <div className="font-semibold text-sm sm:text-base leading-tight whitespace-normal break-words">
+                              <div className="font-semibold text-xs sm:text-sm leading-tight whitespace-normal break-words">
                                 {option.text}
                               </div>
-                              <div className="text-xs text-gold-300 leading-relaxed whitespace-normal break-words px-1">
+                              <div className="text-[10px] sm:text-xs text-gold-300 leading-relaxed whitespace-normal break-words px-1">
                                 {option.traits.slice(0, 3).join(", ")}
                               </div>
                             </div>
