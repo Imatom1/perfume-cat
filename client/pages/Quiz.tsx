@@ -518,7 +518,7 @@ export default function Quiz() {
                           <div className="absolute inset-px rounded-2xl bg-black-900/60 border border-gold-500/30" />
                           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_30%_20%,rgba(253,216,53,0.08),transparent_60%)]" />
                           <div className="relative z-10 h-full w-full p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center text-center">
-                            <IconComponent strokeWidth={1.75} className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 text-gold-600 flex-shrink-0 drop-shadow-[0_0_12px_rgba(253,216,53,0.2)]" />
+                            <IconComponent size={160} strokeWidth={2} className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 min-w-[12rem] min-h-[12rem] text-gold-600 flex-shrink-0 drop-shadow-[0_0_12px_rgba(253,216,53,0.2)]" />
                             <div className="space-y-1 mt-2 sm:mt-3 flex-1 flex flex-col justify-center w-full text-center">
                               <div className="font-semibold text-xs sm:text-sm leading-tight whitespace-normal break-words">
                                 {option.text}
@@ -527,7 +527,7 @@ export default function Quiz() {
                                 {option.traits.slice(0, 3).join(", ")}
                               </div>
                             </div>
-                            <IconComponent className="absolute -right-2 -bottom-2 w-32 h-32 md:w-40 md:h-40 opacity-10 text-gold-500 pointer-events-none" />
+                            <IconComponent className="absolute -right-2 -bottom-2 w-40 h-40 md:w-56 md:h-56 opacity-10 text-gold-500 pointer-events-none" />
                           </div>
                         </Button>
                       );
