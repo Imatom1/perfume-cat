@@ -509,19 +509,16 @@ export default function Quiz() {
                         <Button
                           key={option.id}
                           onClick={() => handleAnswer(option)}
-                          className="group relative aspect-square p-0 rounded-2xl overflow-hidden border-0 text-gold-300 bg-gradient-to-br from-gold-700/30 via-gold-500/10 to-transparent hover:from-gold-700/50 hover:via-gold-500/20 transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_10px_30px_rgba(253,216,53,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500/40 focus-visible:ring-offset-2 focus-visible:ring-offset-black-900 w-full h-auto"
-                          style={{
-                            minHeight: "calc(min(70vw, 340px))",
-                            maxHeight: "420px",
-                          }}
+                          className="group relative p-0 rounded-2xl overflow-hidden border-0 text-gold-300 bg-gradient-to-br from-gold-700/30 via-gold-500/10 to-transparent hover:from-gold-700/50 hover:via-gold-500/20 transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_10px_30px_rgba(253,216,53,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500/40 focus-visible:ring-offset-2 focus-visible:ring-offset-black-900 w-full h-72 md:h-80"
                         >
                           <div className="absolute inset-px rounded-2xl bg-black-900/60 border border-gold-500/30" />
                           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_30%_20%,rgba(253,216,53,0.08),transparent_60%)]" />
-                          <div className="relative z-10 h-full w-full p-4 sm:p-5 md:p-6 flex flex-col text-center">
-                            <div className="flex items-center justify-center flex-[0_0_50%]">
-                              <IconComponent size={200} strokeWidth={2} className="text-gold-600 drop-shadow-[0_0_12px_rgba(253,216,53,0.2)]" />
+                          <div className="relative z-10 h-full w-full flex flex-col md:flex-row">
+                            <div className="flex-1 flex items-center justify-center relative p-5 md:p-6">
+                              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(253,216,53,0.12),transparent_60%)]" />
+                              <IconComponent size={220} strokeWidth={2.25} className="relative text-gold-600 drop-shadow-[0_0_16px_rgba(253,216,53,0.25)]" />
                             </div>
-                            <div className="flex-[0_0_50%] flex flex-col justify-center w-full text-center space-y-1 mt-2 sm:mt-3">
+                            <div className="flex-1 flex flex-col items-center justify-center text-center px-5 md:px-6 py-4 gap-2">
                               <div className="font-semibold text-xs sm:text-sm leading-tight whitespace-normal break-words">
                                 {option.text}
                               </div>
@@ -529,7 +526,6 @@ export default function Quiz() {
                                 {option.traits.slice(0, 3).join(", ")}
                               </div>
                             </div>
-                            <IconComponent size={220} className="absolute -right-2 -bottom-2 opacity-10 text-gold-500 pointer-events-none" />
                           </div>
                         </Button>
                       );
