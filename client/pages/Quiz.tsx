@@ -502,32 +502,31 @@ export default function Quiz() {
                     {quizQuestions[currentQuestion].question}
                   </h3>
 
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5 lg:gap-4 max-w-7xl mx-auto">
                     {quizQuestions[currentQuestion].options.map((option) => {
                       const IconComponent = option.icon;
                       return (
-                        <Button
+                        <button
                           key={option.id}
-                          variant="outline"
-                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-300 hover:bg-black-800 hover:text-white hover:border-gold-500 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
+                          type="button"
                           onClick={() => handleAnswer(option)}
-                          style={{
-                            minHeight: "calc(min(40vw, 180px))",
-                            maxHeight: "220px",
-                          }}
+                          className="group relative block w-full rounded-2xl border border-gold-400/60 bg-black-900/70 hover:bg-black-800 transition-all duration-200 hover:shadow-[0_0_0_2px_rgba(253,216,53,0.4)] focus:outline-none focus:ring-2 focus:ring-gold-500/40"
+                          style={{ height: "clamp(9rem, 18vw, 12rem)" }}
                         >
-                          <div className="flex flex-col items-center justify-center space-y-2 sm:space-y-3 h-full w-full">
-                            <IconComponent className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-gold-600 flex-shrink-0" />
-                            <div className="space-y-1 flex-1 flex flex-col justify-center w-full text-center">
-                              <div className="font-semibold text-sm sm:text-base leading-tight whitespace-normal break-words">
+                          <div className="flex flex-col h-full">
+                            <div className="flex items-center justify-center p-3 sm:p-4 flex-1">
+                              <IconComponent strokeWidth={2} className="text-gold-500 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16" />
+                            </div>
+                            <div className="flex flex-col items-center justify-center text-center px-3 sm:px-4 py-2 gap-1">
+                              <div className="font-semibold text-xs sm:text-sm leading-tight break-words">
                                 {option.text}
                               </div>
-                              <div className="text-xs text-gold-300 leading-relaxed whitespace-normal break-words px-1">
+                              <div className="text-[10px] sm:text-xs text-gold-300 leading-relaxed break-words px-1">
                                 {option.traits.slice(0, 3).join(", ")}
                               </div>
                             </div>
                           </div>
-                        </Button>
+                        </button>
                       );
                     })}
                   </div>
@@ -557,7 +556,7 @@ export default function Quiz() {
                         <CardContent className="p-3 sm:p-4 md:p-5">
                           <div className="space-y-2 sm:space-y-3">
                             <div className="flex items-center justify-between">
-                              <Badge className="bg-gold-600 text-white text-xs font-semibold">
+                              <Badge className="bg-gold-500 text-black-950 text-xs font-semibold">
                                 #{index + 1} Match
                               </Badge>
                               <Crown className="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" />
