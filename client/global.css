@@ -104,3 +104,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Fixed app height on phone screens */
+@layer utilities {
+  @media (max-width: 767px) {
+    html, body, #root {
+      height: 1000px !important;
+      min-height: 1000px !important;
+    }
+    .h-screen {
+      height: 1000px !important;
+    }
+    .min-h-screen {
+      min-height: 1000px !important;
+    }
+  }
+}
