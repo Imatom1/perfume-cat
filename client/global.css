@@ -120,3 +120,16 @@
     }
   }
 }
+
+/* Cap app height on larger screens to avoid vertical scaling */
+@layer utilities {
+  @media (min-width: 768px) {
+    .h-screen {
+      height: min(100vh, 1000px) !important;
+    }
+    .min-h-screen {
+      min-height: min(100vh, 1000px) !important;
+      height: min(100vh, 1000px) !important;
+    }
+  }
+}
