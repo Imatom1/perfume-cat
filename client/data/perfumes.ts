@@ -230,7 +230,7 @@ export const perfumes: Perfume[] = [
   {
     id: "imagination-lv",
     name: "Imagination",
-    brand: "Imagination",
+    brand: "Fantasy",
     originalBrand: "Louis Vuitton",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Tea", "Amber", "Woody", "Aquatic"],
@@ -522,7 +522,7 @@ export const perfumes: Perfume[] = [
   {
     id: "kalemat",
     name: "Kalemat",
-    brand: "Kalemat Essence",
+    brand: "Essence",
     originalBrand: "Arabian Oud",
     gender: "Unisex",
     mainAccords: ["Oud", "Floral", "Fruity", "Sweet", "Amber", "Sophisticated"],
@@ -835,7 +835,7 @@ export const perfumes: Perfume[] = [
   {
     id: "wisal",
     name: "Wisal",
-    brand: "Golden Aroma",
+    brand: "Wisal Elegance",
     originalBrand: "Ajmal",
     gender: "Unisex",
     mainAccords: ["Rose", "Oud", "Romantic", "Union", "Amber", "Sensual"],
@@ -1269,7 +1269,7 @@ export const perfumes: Perfume[] = [
   {
     id: "desire-blue",
     name: "Desire Blue",
-    brand: "Desire Blue Sky",
+    brand: "Desire Sky",
     originalBrand: "Dunhill",
     gender: "Men",
     mainAccords: ["Fresh", "Aquatic", "Citrus", "Marine", "Light", "Breezy"],
@@ -1288,7 +1288,7 @@ export const perfumes: Perfume[] = [
   {
     id: "dior-homme-intense",
     name: "Dior Homme Intense",
-    brand: "Homme Intense",
+    brand: "Intense Longing",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: [
@@ -1314,7 +1314,7 @@ export const perfumes: Perfume[] = [
   {
     id: "the-scent-elixir",
     name: "The Scent Elixir",
-    brand: "Elixir of Power",
+    brand: "Power Elixir",
     originalBrand: "Hugo Boss",
     gender: "Men",
     mainAccords: [
@@ -1385,7 +1385,7 @@ export const perfumes: Perfume[] = [
   {
     id: "this-is-him-undressed",
     name: "This Is Him Undressed",
-    brand: "Bare Allure",
+    brand: "Absolute Allure",
     originalBrand: "Zadig & Voltaire",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Woody", "Clean", "Modern", "Minimalist"],
@@ -1404,7 +1404,7 @@ export const perfumes: Perfume[] = [
   {
     id: "stronger-with-you",
     name: "Stronger With You",
-    brand: "Stronger Bond",
+    brand: "Stronger",
     originalBrand: "Emporio Armani",
     gender: "Men",
     mainAccords: ["Sweet", "Spicy", "Woody", "Vanilla", "Amber", "Addictive"],
@@ -1487,7 +1487,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sauvage",
     name: "Sauvage",
-    brand: "Desert Savage",
+    brand: "Wild Essence",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: [
@@ -1513,7 +1513,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sauvage-elixir",
     name: "Sauvage Elixir",
-    brand: "Savage Elixir",
+    brand: "Savor Elixir",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: ["Spicy", "Woody", "Amber", "Licorice", "Intense", "Powerful"],
@@ -1558,7 +1558,7 @@ export const perfumes: Perfume[] = [
   {
     id: "gucci-guilty-absolute",
     name: "Guilty Absolute",
-    brand: "Guilty Absolute",
+    brand: "Absolute G",
     originalBrand: "Gucci",
     gender: "Men",
     mainAccords: ["Woody", "Leather", "Patchouli", "Dry", "Dark", "Intense"],
@@ -1577,7 +1577,7 @@ export const perfumes: Perfume[] = [
   {
     id: "fahrenheit",
     name: "Fahrenheit",
-    brand: "Fahrenheit Blaze",
+    brand: "Phoenix Blaze",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: ["Woody", "Violet", "Leather", "Gasoline", "Unique", "Retro"],
@@ -1705,7 +1705,7 @@ export const perfumes: Perfume[] = [
   {
     id: "legend-montblanc",
     name: "Legend",
-    brand: "Montblanc Legend",
+    brand: "Legendaria",
     originalBrand: "Mont Blanc",
     gender: "Men",
     mainAccords: [
@@ -1769,7 +1769,7 @@ export const perfumes: Perfume[] = [
   {
     id: "one-million",
     name: "One Million",
-    brand: "Millionaire Gold",
+    brand: "Millionaire",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: ["Sweet", "Spicy", "Woody", "Cinnamon", "Amber", "Seductive"],
@@ -1969,7 +1969,7 @@ export const perfumes: Perfume[] = [
   {
     id: "oriana",
     name: "Oriana",
-    brand: "Oriana Dream",
+    brand: "Dream",
     originalBrand: "Parfums de Marly",
     gender: "Women",
     mainAccords: [
@@ -2027,7 +2027,7 @@ export const perfumes: Perfume[] = [
   {
     id: "elie-saab",
     name: "Elie Saab Le Parfum",
-    brand: "Elie's Grace",
+    brand: "Grace",
     originalBrand: "Elie Saab",
     gender: "Women",
     mainAccords: [
@@ -2316,7 +2316,7 @@ export const perfumes: Perfume[] = [
   {
     id: "delina",
     name: "Delina",
-    brand: "Rose Delina",
+    brand: "Rose Delight",
     originalBrand: "Parfums de Marly",
     gender: "Women",
     mainAccords: ["Rose", "Fruity", "Sweet", "Peony", "Lychee", "Luxurious"],
@@ -2443,7 +2443,7 @@ export const perfumes: Perfume[] = [
   {
     id: "si-armani",
     name: "Sì",
-    brand: "Armani Sí",
+    brand: "Silicon Beauty",
     originalBrand: "Giorgio Armani",
     gender: "Women",
     mainAccords: [
@@ -2469,7 +2469,7 @@ export const perfumes: Perfume[] = [
   {
     id: "chanel-no5",
     name: "Chanel Nº5",
-    brand: "Eternal No.5",
+    brand: "Eternal 5",
     originalBrand: "Chanel",
     gender: "Women",
     mainAccords: [
@@ -2720,7 +2720,7 @@ export const perfumes: Perfume[] = [
   {
     id: "queen-of-silk",
     name: "Queen of Silk",
-    brand: "Queen of Silk",
+    brand: "Empress",
     originalBrand: "Creed",
     gender: "Women",
     mainAccords: ["Floral", "Rose", "Silk", "Luxurious", "Elegant", "Regal"],
@@ -2816,7 +2816,7 @@ export const perfumes: Perfume[] = [
   {
     id: "my-way",
     name: "My Way",
-    brand: "My Way",
+    brand: "One Way",
     originalBrand: "Giorgio Armani",
     gender: "Women",
     mainAccords: [
@@ -2841,7 +2841,7 @@ export const perfumes: Perfume[] = [
   {
     id: "midnight-fantasy",
     name: "Midnight Fantasy",
-    brand: "Midnight Fantasy",
+    brand: "Dark Desire",
     originalBrand: "Britney Spears",
     gender: "Women",
     mainAccords: [
@@ -2867,7 +2867,7 @@ export const perfumes: Perfume[] = [
   {
     id: "narciso-rodriguez-black",
     name: "For Her Black",
-    brand: "Noir Narciso",
+    brand: "Noir Narcotic",
     originalBrand: "Narciso Rodriguez",
     gender: "Women",
     mainAccords: [
@@ -2893,7 +2893,7 @@ export const perfumes: Perfume[] = [
   {
     id: "narciso-rodriguez-pink",
     name: "For Her Pink",
-    brand: "Pink Narciso",
+    brand: "Pink Narcotic",
     originalBrand: "Narciso Rodriguez",
     gender: "Women",
     mainAccords: ["Floral", "Musky", "Rose", "Peony", "Geranium", "Feminine"],
