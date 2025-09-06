@@ -7,7 +7,7 @@ export interface PerfumeLink {
 }
 
 // Default placeholder link for perfumes without specific URLs
-export const DEFAULT_BUY_URL = "https://example.com/shop";
+export const DEFAULT_BUY_URL = "https://golden-aroma.square.site/s/shop";
 
 // Perfume-specific purchase links
 export const perfumeLinks: PerfumeLink[] = [
@@ -72,7 +72,7 @@ export const perfumeLinks: PerfumeLink[] = [
     buyUrl: "https://golden-aroma.square.site/product/inspired-by-royal-oud-oud-royale/3XQHKVMDW7FLFVWKAXTLMNPS?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N",
   },
   { perfumeId: "kalemat", buyUrl: "https://golden-aroma.square.site/product/inspired-by-kalemat-essence/Q5U7VEHLJN4JK6NTGDAXQ3YT?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N" },
-  { perfumeId: "zanbak", buyUrl: "https://example.com/shop/zanbak" },
+  { perfumeId: "zanbak", buyUrl: "https://golden-aroma.square.site/product/inspired-by-zanbak-white-lily/VC542NJCC2UE6Z7AOMNAHJJ7?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N" },
   {
     perfumeId: "sultan-al-outor",
     buyUrl: "https://golden-aroma.square.site/product/inspired-by-sultan-al-outor-sultan-s-aura/VZCHHERJERQEFXGFH65FU2BM?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N",
@@ -105,15 +105,15 @@ export const perfumeLinks: PerfumeLink[] = [
   },
   {
     perfumeId: "meydan-dubai",
-    buyUrl: "https://example.com/shop/meydan-dubai",
+    buyUrl: "https://golden-aroma.square.site/product/inspired-by-meydan-dubai-spirit-of-dubai/XWY5VQTER5YT55FTQ372QRDN?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N",
   },
-  { perfumeId: "la-luna", buyUrl: "https://example.com/shop/la-luna" },
+  { perfumeId: "la-luna", buyUrl: "https://golden-aroma.square.site/product/inspired-by-la-luna-luna-mystery/GUVSQ6H5HLZGWKZHSDXCZBUB?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N" },
   {
     perfumeId: "magic-al-jazeera",
-    buyUrl: "https://example.com/shop/magic-al-jazeera",
+    buyUrl: "https://golden-aroma.square.site/product/inspired-by-magic-al-jazeera-island-magic/PCEY3RRNSRFRXE7SK7HIPF3T?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N",
   },
   { perfumeId: "wared-jore", buyUrl: "https://golden-aroma.square.site/product/inspired-by-wared-jori-rose-garden/6EC53W6HREOW5DZU4LYJ4Z2U?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N" },
-  { perfumeId: "wisal", buyUrl: "https://example.com/shop/wisal" },
+  { perfumeId: "wisal", buyUrl: "https://golden-aroma.square.site/product/inspired-by-wisal-ajmal-wisal-elegance/ZRXC7V2GEJ7WACGFFNVU2XCP?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N" },
   { perfumeId: "yasmin", buyUrl: "https://golden-aroma.square.site/product/inspired-by-yasmin-jasmine-petals/4D3MMWYAHIDAGUN4GNLQRH7S?cp=true&sa=true&sbp=false&q=false" },
   { perfumeId: "khamrah", buyUrl: "https://golden-aroma.square.site/product/inspired-by-khamrah-lattafa-khamrah-delight/ESARNZ3OTQ6KAJGKQGSVWGNV?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N" },
   { perfumeId: "oud-bouquet", buyUrl: "https://golden-aroma.square.site/product/inspired-by-oud-bouquet-oud-bouquet/7XZM5432NG3YUXK2P3F7UGAE?cp=true&sa=false&sbp=false&q=false&category_id=2GCWNDMHNSKSAA2K76ASX36N" },
@@ -196,7 +196,7 @@ export const perfumeLinks: PerfumeLink[] = [
     perfumeId: "silver-scent",
     buyUrl: "https://golden-aroma.square.site/product/inspired-by-silver-scent-silver-aura/GDMN5V4ELA3W3QGKNAEJZVS3?cp=true&sa=false&sbp=false&q=false&category_id=FUZUO42ZJVS4T5CR7UQPRF4X",
   },
-  { perfumeId: "sauvage", buyUrl: "https://example.com/shop/sauvage" },
+  { perfumeId: "sauvage", buyUrl: "https://golden-aroma.square.site/product/inspired-by-dior-sauvage-wild-essence/GI35DEKWL7UPUCDUVDDOQLSF?cp=true&sa=false&sbp=false&q=false&category_id=FUZUO42ZJVS4T5CR7UQPRF4X" },
   {
     perfumeId: "sauvage-elixir",
     buyUrl: "https://golden-aroma.square.site/product/inspired-by-sauvage-elixir-savage-elixir/VJ74KGVOVDG4MEOA7ZN6IZFA?cp=true&sa=false&sbp=false&q=false&category_id=FUZUO42ZJVS4T5CR7UQPRF4X",
@@ -211,7 +211,7 @@ export const perfumeLinks: PerfumeLink[] = [
   },
   { perfumeId: "fahrenheit", buyUrl: "https://golden-aroma.square.site/product/inspired-by-fahrenheit-phoenix-blaze/KJPKTEGDRBE5LMLKMV3JWXWY?cp=true&sa=false&sbp=false&q=false&category_id=FUZUO42ZJVS4T5CR7UQPRF4X" },
   { perfumeId: "aventus", buyUrl: "https://golden-aroma.square.site/product/inspired-by-creed-aventus-noble-aventus/EKEVCCKQD2LBGAWMNLA3Z6XU?cp=true&sa=false&sbp=false&q=false&category_id=FUZUO42ZJVS4T5CR7UQPRF4X" },
-  { perfumeId: "cool-water", buyUrl: "https://example.com/shop/cool-water" },
+  { perfumeId: "cool-water", buyUrl: "https://golden-aroma.square.site/product/inspired-by-cool-water-cool-horizon/7PPGOEQVSKBXYO4WWRUUSQ2H?cp=true&sa=false&sbp=false&q=false&category_id=FUZUO42ZJVS4T5CR7UQPRF4X" },
   {
     perfumeId: "lacoste-white",
     buyUrl: "https://golden-aroma.square.site/product/inspired-by-lacoste-white-l-12-12-white-spirit/LKVZVQQ7B7DZT44S4TB22TUD?cp=true&sa=false&sbp=false&q=false&category_id=FUZUO42ZJVS4T5CR7UQPRF4X",
@@ -293,7 +293,7 @@ export const perfumeLinks: PerfumeLink[] = [
   { perfumeId: "delina", buyUrl: "https://golden-aroma.square.site/product/inspired-by-delina-rose-delight/6WNJMGQ2CWQOTSOEKLLPHXRV?cp=true&sa=false&sbp=false&q=false&category_id=S3Z2QFXX5J4UTDU6UA6QSOEH" },
   {
     perfumeId: "ralph-lauren-women",
-    buyUrl: "https://example.com/shop/ralph-lauren-womenhttps://golden-aroma.square.site/product/inspired-by-ralph-lauren-polo-elegance/6OIIC5PZWBH2L3DQJDIUOJRV?cp=true&sa=false&sbp=false&q=false&category_id=S3Z2QFXX5J4UTDU6UA6QSOEH",
+    buyUrl: "https://golden-aroma.square.site/product/inspired-by-ralph-lauren-polo-elegance/6OIIC5PZWBH2L3DQJDIUOJRV?cp=true&sa=false&sbp=false&q=false&category_id=S3Z2QFXX5J4UTDU6UA6QSOEH",
   },
   {
     perfumeId: "rose-des-vents",
@@ -343,7 +343,7 @@ export const perfumeLinks: PerfumeLink[] = [
     buyUrl: "https://golden-aroma.square.site/product/inspired-by-love-is-heavenly-heavenly-love/ICAO3FGI3Q42ZAHDUNGFAZW2?cp=true&sa=false&sbp=false&q=false&category_id=S3Z2QFXX5J4UTDU6UA6QSOEH",
   },
   { perfumeId: "libre", buyUrl: "https://golden-aroma.square.site/product/inspired-by-libre-libre-spirit/PWZ3AFDTBOGQ2KGQ6BHT3ZW2?cp=true&sa=false&sbp=false&q=false&category_id=S3Z2QFXX5J4UTDU6UA6QSOEH" },
-  { perfumeId: "my-way", buyUrl: "https://example.com/shop/my-way" },
+  { perfumeId: "my-way", buyUrl: "https://golden-aroma.square.site/product/inspired-by-my-way-one-way/UA6TVW7NPDDBOJWZHH45JVSL?cp=true&sa=false&sbp=false&q=false&category_id=S3Z2QFXX5J4UTDU6UA6QSOEH" },
   {
     perfumeId: "midnight-fantasy",
     buyUrl: "https://golden-aroma.square.site/product/inspired-by-midnight-fantasy-dark-desire/RUCFWO2YW4IY5ESJADYHFZLE?cp=true&sa=false&sbp=false&q=false&category_id=S3Z2QFXX5J4UTDU6UA6QSOEH",
