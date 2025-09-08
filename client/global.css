@@ -105,15 +105,14 @@
   }
 }
 
-/* Device-based app height */
+/* Iframe-relative app height */
 @layer base {
-  html, body, #root {
-    min-height: 100svh;
-  }
+  html, body { height: 100%; }
+  #root { min-height: 100%; height: 100%; }
 }
 
-/* Map Tailwind screen helpers to small viewport height for mobile correctness */
+/* Map Tailwind screen helpers to 100% to fill iframe */
 @layer utilities {
-  .h-screen { height: 100svh !important; }
-  .min-h-screen { min-height: 100svh !important; }
+  .h-screen { height: 100% !important; }
+  .min-h-screen { min-height: 100% !important; }
 }
