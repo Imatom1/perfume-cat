@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Scale, X, Plus, Crown, Search, ArrowLeft } from "lucide-react";
+import { Scale, X, Plus, Crown, Search, ArrowLeft, ArrowUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { perfumes, Perfume } from "../data/perfumes";
 import { CompactPerfumeCard } from "../components/CompactPerfumeCard";
@@ -30,6 +30,13 @@ export default function Compare() {
   const [seasonFilter, setSeasonFilter] = useState("");
   const [accordFilter, setAccordFilter] = useState("");
   const [isInitialized, setIsInitialized] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowScrollTop(window.scrollY > 300);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   // Initialize comparison list from URL params on mount
   useEffect(() => {
@@ -168,6 +175,28 @@ export default function Compare() {
           </div>
         </div>
       </div>
+
+      {comparisonList.length > 0 && (
+        <div className="sticky top-[64px] sm:top-[72px] md:top-[80px] z-40 bg-black-900/80 supports-[backdrop-filter]:bg-black-900/60 backdrop-blur border-b border-gold-500">
+          <div className="max-w-7xl mx-auto px-2 sm:px-3 py-2 flex items-center gap-2 overflow-x-auto">
+            {comparisonList.map((p) => (
+              <div key={p.id} className="flex items-center gap-2 px-2 py-1 rounded-md border border-gold-400 bg-black-800 text-gold-300 whitespace-nowrap">
+                <span className="text-xs font-semibold">{p.name}</span>
+                <button onClick={() => removeFromComparison(p.id)} className="text-gold-400 hover:text-gold-200" aria-label={`Remove ${p.name}`}>
+                  <X className="w-3 h-3" />
+                </button>
+              </div>
+            ))}
+            <div className="ml-auto">
+              {comparisonList.length > 0 && (
+                <Button variant="outline" size="sm" onClick={clearComparison} className="border-gold-400 text-gold-300 h-7">
+                  Clear
+                </Button>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="max-w-7xl mx-auto px-2 sm:px-3 py-2">
         <div className="flex flex-col lg:flex-row gap-4">
@@ -384,6 +413,17 @@ export default function Compare() {
             : false
         }
       />
+
+      {showScrollTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="fixed bottom-4 right-4 z-50 rounded-full p-3 bg-gold-600 hover:bg-gold-700 text-black-950 shadow-lg border border-gold-400"
+          aria-label="Scroll to top"
+          type="button"
+        >
+          <ArrowUp className="w-5 h-5" />
+        </button>
+      )}
     </div>
   );
 }
