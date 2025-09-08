@@ -118,3 +118,9 @@
     overflow: hidden;
   }
 }
+
+/* Force app sections to fill the viewport exactly */
+@layer utilities {
+  .h-screen { height: 100dvh !important; }
+  .min-h-screen { height: 100dvh !important; min-height: 100dvh !important; }
+}
