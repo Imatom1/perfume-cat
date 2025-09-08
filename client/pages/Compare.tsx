@@ -349,7 +349,7 @@ export default function Compare() {
                         </p>
                       </div>
                     ) : (
-                      availablePerfumes.slice(0, 15).map((perfume) => (
+                      availablePerfumes.map((perfume) => (
                         <div key={perfume.id} className="relative">
                           <CompactPerfumeCard
                             perfume={perfume}
