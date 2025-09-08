@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Scale, X, Plus, Crown, Search, ArrowLeft, ArrowUp } from "lucide-react";
+import { Scale, X, Plus, Crown, Search, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { perfumes, Perfume } from "../data/perfumes";
 import { CompactPerfumeCard } from "../components/CompactPerfumeCard";
@@ -30,13 +30,6 @@ export default function Compare() {
   const [seasonFilter, setSeasonFilter] = useState("");
   const [accordFilter, setAccordFilter] = useState("");
   const [isInitialized, setIsInitialized] = useState(false);
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setShowScrollTop(window.scrollY > 300);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   // Initialize comparison list from URL params on mount
   useEffect(() => {
@@ -414,16 +407,6 @@ export default function Compare() {
         }
       />
 
-      {showScrollTop && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-4 right-4 z-50 rounded-full p-3 bg-gold-600 hover:bg-gold-700 text-black-950 shadow-lg border border-gold-400"
-          aria-label="Scroll to top"
-          type="button"
-        >
-          <ArrowUp className="w-5 h-5" />
-        </button>
-      )}
     </div>
   );
 }
