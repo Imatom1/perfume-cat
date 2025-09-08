@@ -169,6 +169,28 @@ export default function Compare() {
         </div>
       </div>
 
+      {comparisonList.length > 0 && (
+        <div className="sticky top-[64px] sm:top-[72px] md:top-[80px] z-40 bg-black-900/80 supports-[backdrop-filter]:bg-black-900/60 backdrop-blur border-b border-gold-500">
+          <div className="max-w-7xl mx-auto px-2 sm:px-3 py-2 flex items-center gap-2 overflow-x-auto">
+            {comparisonList.map((p) => (
+              <div key={p.id} className="flex items-center gap-2 px-2 py-1 rounded-md border border-gold-400 bg-black-800 text-gold-300 whitespace-nowrap">
+                <span className="text-xs font-semibold">{p.name}</span>
+                <button onClick={() => removeFromComparison(p.id)} className="text-gold-400 hover:text-gold-200" aria-label={`Remove ${p.name}`}>
+                  <X className="w-3 h-3" />
+                </button>
+              </div>
+            ))}
+            <div className="ml-auto">
+              {comparisonList.length > 0 && (
+                <Button variant="outline" size="sm" onClick={clearComparison} className="border-gold-400 text-gold-300 h-7">
+                  Clear
+                </Button>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="max-w-7xl mx-auto px-2 sm:px-3 py-2">
         <div className="flex flex-col lg:flex-row gap-4">
           {/* Comparison table section - prioritize on mobile */}
@@ -341,7 +363,7 @@ export default function Compare() {
                     </Button>
                   </div>
                 ) : (
-                  <div className="max-h-[500px] lg:max-h-[1000px] overflow-y-auto space-y-1">
+                  <div className="space-y-1">
                     {availablePerfumes.length === 0 ? (
                       <div className="text-center py-4">
                         <p className="text-xs text-gold-300">
@@ -349,7 +371,7 @@ export default function Compare() {
                         </p>
                       </div>
                     ) : (
-                      availablePerfumes.slice(0, 15).map((perfume) => (
+                      availablePerfumes.map((perfume) => (
                         <div key={perfume.id} className="relative">
                           <CompactPerfumeCard
                             perfume={perfume}
@@ -384,6 +406,7 @@ export default function Compare() {
             : false
         }
       />
+
     </div>
   );
 }

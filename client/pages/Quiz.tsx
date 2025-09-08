@@ -439,7 +439,7 @@ export default function Quiz() {
 
       <div className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
         <Card
-          className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl relative flex flex-col min-h-[calc(100vh-16rem)]
+          className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl relative flex flex-col min-h-[calc(100%-16rem)]
         before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
         >
           <CardHeader className="relative z-10 flex-shrink-0">
@@ -494,7 +494,7 @@ export default function Quiz() {
             )}
           </CardHeader>
 
-          <CardContent className="relative z-10 flex-1 overflow-y-auto p-6 sm:p-8">
+          <CardContent className="relative z-10 flex-1 p-6 sm:p-8">
             {!showResults ? (
               <div className="space-y-6">
                 <div>
@@ -545,7 +545,7 @@ export default function Quiz() {
                   </p>
                 </div>
 
-                <div className="flex-1 overflow-y-auto">
+                <div className="flex-1">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pb-4">
                     {recommendations.map((perfume, index) => (
                       <Card

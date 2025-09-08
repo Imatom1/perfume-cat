@@ -430,7 +430,7 @@ export default function PerfumeMixer() {
       </div>
 
       <div className="flex-1 max-w-7xl mx-auto px-1 sm:px-2 md:px-3 py-1 sm:py-2">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 sm:gap-2 min-h-[calc(100vh-8rem)]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 sm:gap-2 min-h-[calc(100%-8rem)]">
           {/* Left Panel - Mixer */}
           <div className="lg:col-span-2 flex flex-col min-h-[400px] mb-4 lg:mb-0">
             <Card className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border border-gold-400 shadow-lg flex-1 flex flex-col">
@@ -454,7 +454,7 @@ export default function PerfumeMixer() {
                 </CardTitle>
               </CardHeader>
 
-              <CardContent className="p-1.5 sm:p-2 flex-1 max-h-[60vh] lg:max-h-none overflow-y-auto">
+              <CardContent className="p-1.5 sm:p-2 flex-1">
                 {/* Ingredients List */}
                 <div className="space-y-1">
                   {ingredients.length === 0 ? (
@@ -848,7 +848,7 @@ export default function PerfumeMixer() {
                 </div>
               </CardHeader>
 
-              <CardContent className="p-2 sm:p-3 flex-1 max-h-[50vh] lg:max-h-none overflow-y-auto">
+              <CardContent className="p-2 sm:p-3 flex-1">
                 {!canAddMore ? (
                   <div className="text-center py-8">
                     <Crown className="w-12 h-12 text-gold-400 mx-auto mb-2" />
