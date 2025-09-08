@@ -494,7 +494,7 @@ export default function Quiz() {
             )}
           </CardHeader>
 
-          <CardContent className="relative z-10 flex-1 overflow-y-auto p-6 sm:p-8">
+          <CardContent className="relative z-10 flex-1 p-6 sm:p-8">
             {!showResults ? (
               <div className="space-y-6">
                 <div>
@@ -545,7 +545,7 @@ export default function Quiz() {
                   </p>
                 </div>
 
-                <div className="flex-1 overflow-y-auto">
+                <div className="flex-1">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pb-4">
                     {recommendations.map((perfume, index) => (
                       <Card

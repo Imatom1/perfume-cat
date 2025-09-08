@@ -341,7 +341,7 @@ export default function Compare() {
                     </Button>
                   </div>
                 ) : (
-                  <div className="max-h-[500px] lg:max-h-[1000px] overflow-y-auto space-y-1">
+                  <div className="space-y-1">
                     {availablePerfumes.length === 0 ? (
                       <div className="text-center py-4">
                         <p className="text-xs text-gold-300">
